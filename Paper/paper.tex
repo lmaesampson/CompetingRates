@@ -55,7 +55,7 @@ p(\mathrm{immune}|a) = 1 - \exp\left(-\int_0^a f(a') da'\right),
 \end{equation}
 where $f(a)$ is the \emph{force of infection} at age $a$, which can be thought of as the rate of infection at a particular age. This expression is valid in the absence of vaccination, as in this case infection is the only source of immunity. In the case of measles, this expression gives the probability of an individual at age $a$ being seropositive for measles.
 
-In situations in which vaccination is present, vaccination provides a second means of acquiring immunity - the `force of vaccination,' or `vaccination hazard.' If we represent this as $v(a)$, then we can extend Eq.~\ref{eq:CatMod} to give the probability of an individual testing seropositive at age $a$ as
+In situations in which vaccination is present, vaccination provides a second means of acquiring immunity - the `force of vaccination,' or `vaccination hazard' (vh). If we represent this as $v(a)$, then we can extend Eq.~\ref{eq:CatMod} to give the probability of an individual testing seropositive at age $a$ as
 \begin{align}
 p(\mathrm{immune}|a)  &= 1 - \exp\left( - \int_0^a f(a') + v(a') da'\right) \nonumber \\ 
 &=1 - \exp\left(-\int_0^a f(a') - \int_0^a v(a') da'\right).
@@ -138,6 +138,7 @@ In order to assess the impact of different types of data (case, serology, and va
 
 \section{Results \label{sec:Results}}
 \subsection{Simulated Data \label{subsec:SimDat}}
+Although we have chosen a flexible functional form to represent the force of infection and vaccination hazards, we know that that the true functions present in nature are unlikely to be precisely matched by Weibull distributions. This will necessarily lead to some level of biases in our inferences. To understand these possible biases, we analyze simulated data with known foi, vh, and $\gamma$ (vaccine efficacy), and examine the results.  
 Results:
 Simulation experiment ? illustrate for 10 levels of vaccine effectiveness:
 	a) Does fitted model using vaccination and case data only recover the true seroprevalence?
