@@ -23,12 +23,13 @@
 \maketitle
 
 \section{Introduction \label{sec:Intro}}
-- Quantifying the size and age distribution of the population susceptible to measles is a critical tool in evaluating vaccination programs and developing interventions.  
-- Unfortunately, direct observation of the susceptible population is challenging as it requires a sero-survey which can be cost-prohibitive.
+- Quantifying the size and age distribution of the population susceptible to measles is a critical tool in evaluating vaccination programs and developing interventions (Winter et al JID; Cutts and Hanson TMIH).  
+- Unfortunately, direct observation of the susceptible population is challenging as it requires a sero-survey which can be cost-prohibitive (Winter et al JID paper). 
 - Previous efforts have estimated the susceptible distribution though demographic models that account for inputs through births and immunization via both vaccination an natural infection.
 	- Winter et al (new paper on Madagascar)
 	- Merler and the Italian group (http://www.thelancet.com/pdfs/journals/laninf/PIIS1473-3099(17)30421-8.pdf)
-- The contribution of natural infection to population immunity can be challenging to estimate. In particular, the age-specific force of infection is not directly estimable from aggregate population time series ? (both papers referenced above rely on SIR models that assume a specific age-structured mixing) 
+- The contribution of natural infection to population immunity can be challenging to estimate. In particular, the age-specific force of infection is not directly estimable from aggregate population time series ? (both papers referenced above rely on SIR models that assume a specific age-structured mixing). 
+	- challenges of using historical incidence data -- under-reporting, changing reporting.
 
 - The catalytic model has previously been used to estimate the age-specific force of infection from both serological surveys and the cross-sectional age-distribution of measles cases.  The catalytic model, fit to the cross-sectional age distribution of cases necessarily returns an estimate of the age distribution of susceptibles as a by-product.  This suggests that routine case surveillance could be used to generate an estimate of the age distribution of susceptibles.  
 
@@ -39,7 +40,9 @@ Original applications of the catalytic model assumed that natural infection was 
 
 Subsequent analyses have made simple assumptions about the role of vaccination, in particular that the delivery of vaccination is timely, and thus affects the age distribution of the susceptible population only by reducing the force of natural infection.  However, recent work has highlighted significant variability both in the maximum vaccination coverage achieved and the timeliness of vaccination ? that is, the proportion of children receiving vaccination after the recommended age.  Thus, failing to account for the age-specific pattern of vaccination may lead to a biased interpretation of case-data, as children who might be vaccinated later than the recommended age remain susceptible may contribute to incident cases. 
 
-Further, vaccination does not necessarily imply immunization.  The efficacy of measles vaccine is often assumed to be ... (see Uzicanin article) though is also known to improve with age as older children are more likely to have lost maternally transferred antibodies (se many). The effectiveness of vaccine delivered in field settings may also vary dramatically due to stability and effectiveness of the vaccine cold chain.  A comparison of the age-distribution of vaccination and sero-prevalence may highlight areas with low effectiveness, and absent a sero-survey this assessment could be made using age-specific case records.  
+Further, vaccination does not necessarily imply immunization.  The efficacy of measles vaccine is often assumed to be ... (see Uzicanin article) though is also known to improve with age as older children are more likely to have lost maternally transferred antibodies (se many). The effectiveness of vaccine delivered in field settings may also vary dramatically due to stability and effectiveness of the vaccine cold chain (Doshi et al 2017 Vaccine).  A comparison of the age-distribution of vaccination and sero-prevalence may highlight areas with low effectiveness, and absent a sero-survey this assessment could be made using age-specific case records.  
+
+Routine vaccination coverage surveys and age-specific case reporting are more readily available data sources (see Takahashi text re: DHS).  
 
 Lay out the DRC case study?
 
@@ -62,7 +65,7 @@ p(\mathrm{immune}|a)  &= 1 - \exp\left( - \int_0^a f(a') + v(a') da'\right) \non
 \label{eq:CatModSum}
 \end{align}
 
-The functional forms of $f(a)$ and $v(a)$ are free to be specified. In this study, we choose to use un-normalized Weibull distributions to parameterize both of these functions, as they have been shown to be sufficiently flexible to match a range of possible forces of infection and vaccination hazards. Thus $f(a) \rightarrow f(a|\mathbb{\psi})$ and $v(a) \rightarrow v(a|\mathbb{\theta})$, where $\mathbb{\psi}$ and $\mathbb{\theta}$ are vectors of the parameters we use for the Weibull distribution - height ($\eta$), scale ($\alpha$), and shape ($\beta$). This gives six parameters that fully specify the forms of $f(a)$ and $v(a)$ from Eq.~\ref{eq:CatModSum} - $\alpha$, $\beta$, and $\eta$ for two independent Weibull distributions. To allow for the fact that not all vaccinations produce immunity, we introduce a seventh parameter - the vaccine effectiveness ($\gamma$). This enters the equation as a multiplier on $v(a)$ that ranges between $0.0$ and $1.0$.
+The functional forms of $f(a)$ and $v(a)$ are free to be specified. In this study, we choose to use un-normalized Weibull distributions to parameterize both of these functions, as they have been shown to be sufficiently flexible to match a range of possible forces of infection and vaccination hazards[REF]. Thus $f(a) \rightarrow f(a|\mathbb{\psi})$ and $v(a) \rightarrow v(a|\mathbb{\theta})$, where $\mathbb{\psi}$ and $\mathbb{\theta}$ are vectors of the parameters we use for the Weibull distribution - height ($\eta$), scale ($\alpha$), and shape ($\beta$). This gives six parameters that fully specify the forms of $f(a)$ and $v(a)$ from Eq.~\ref{eq:CatModSum} - $\alpha$, $\beta$, and $\eta$ for two independent Weibull distributions. To allow for the fact that not all vaccinations produce immunity, we introduce a seventh parameter - the vaccine effectiveness ($\gamma$). This enters the equation as a multiplier on $v(a)$ that ranges between $0.0$ and $1.0$.
 
 Besides the flexibility of the distribution, another appealing aspect of the Weibull as our choice of parameterization is that it can be integrated analytically, as
 \begin{equation}
@@ -87,7 +90,7 @@ p(\mathrm{case}|a) = \left\{ 1 - \exp\left[ -\eta_f \left( \frac{\beta_f}{\alpha
 \end{equation}
 \end{widetext}
 
-The data we work with (described in detail in Sec.~\ref{subsec:Data}) consists of cases as a function of age, serology tests and results as a function of age, and vaccination status as a function of age for a sample of individuals within a particular province. The likelihood for observing this dataset given values for the model parameters as
+The data we work with (described in detail in Sec.~\ref{subsec:Data}) consists of the number cases as a function of age (in years), serology tests and results as a function of age, and vaccination status as a function of age for a sample of individuals within a particular province. The likelihood for observing this dataset given values for the model parameters as
 \begin{align}
 \log \mathcal{L} (\mathbf{c}, \mathbf{v_t}, \mathbf{v_o}, \mathbf{s_t},&\mathbf{s_o}|\eta_f, \alpha_f, \beta_f, \gamma, \eta_v, \alpha_v, \beta_v)\nonumber \\ 
 & = \sum_aB\left(v_o(a), v_t(a); p(\mathrm{vaccinated}|a)\right) \nonumber \\
