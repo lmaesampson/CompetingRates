@@ -1,0 +1,4 @@
+veffprop 0.011
+covarianceJumpProposalSCAM 0.27
+covarianceJumpProposalAM 0.16
+DEJump 0.55
