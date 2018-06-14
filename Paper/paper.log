@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 JUN 2018 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUN 2018 14:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,7 +283,14 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 11.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 11.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 11.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 11.
-(./paper.aux)
+(./paper.aux
+
+LaTeX Warning: Label `subsec:DRC' multiply defined.
+
+
+LaTeX Warning: Label `subsec:DRC@cref' multiply defined.
+
+)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -298,8 +305,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen117
@@ -398,61 +404,55 @@ Underfull \hbox (badness 1158) in paragraph at lines 36--39
 LaTeX Warning: Reference `table:autocorr' on page 3 undefined on input line 151
 .
 
-[3] <figures/foivhaz_fakedata_vaxserocase.pdf, id=31, 578.16pt x 578.16pt>
-File: figures/foivhaz_fakedata_vaxserocase.pdf Graphic file (type pdf)
+[3]
 
-<use figures/foivhaz_fakedata_vaxserocase.pdf>
-Package pdftex.def Info: figures/foivhaz_fakedata_vaxserocase.pdf used on input
- line 174.
-(pdftex.def)             Requested size: 246.0pt x 245.99263pt.
+LaTeX Warning: Reference `fig:veffsimdata' on page 4 undefined on input line 17
+1.
 
-<figures/veff_fakedata.pdf, id=32, 578.16pt x 578.16pt>
-File: figures/veff_fakedata.pdf Graphic file (type pdf)
+<figures/SimPlots-crop.pdf, id=31, 891.33pt x 917.4275pt>
+File: figures/SimPlots-crop.pdf Graphic file (type pdf)
 
-<use figures/veff_fakedata.pdf>
-Package pdftex.def Info: figures/veff_fakedata.pdf used on input line 179.
-(pdftex.def)             Requested size: 246.0pt x 245.99263pt.
- [4 <./figures/foivhaz_fakedata_vaxserocase.pdf>]
+<use figures/SimPlots-crop.pdf>
+Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 174.
+(pdftex.def)             Requested size: 510.0pt x 524.94095pt.
+ [4]
+<figures/VaccFOIveff-crop.pdf, id=35, 1035.87pt x 466.74374pt>
+File: figures/VaccFOIveff-crop.pdf Graphic file (type pdf)
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 184.
+<use figures/VaccFOIveff-crop.pdf>
+Package pdftex.def Info: figures/VaccFOIveff-crop.pdf used on input line 188.
+(pdftex.def)             Requested size: 510.0pt x 229.79608pt.
 
-<figures/vsc_simdata_vaxcase.pdf, id=63, 578.16pt x 578.16pt>
-File: figures/vsc_simdata_vaxcase.pdf Graphic file (type pdf)
+<figures/SeroPlots-crop.pdf, id=36, 811.03pt x 465.74pt>
+File: figures/SeroPlots-crop.pdf Graphic file (type pdf)
 
-<use figures/vsc_simdata_vaxcase.pdf>
-Package pdftex.def Info: figures/vsc_simdata_vaxcase.pdf used on input line 190
-.
-(pdftex.def)             Requested size: 246.0pt x 245.99263pt.
-
-Underfull \hbox (badness 1168) in paragraph at lines 200--202
+<use figures/SeroPlots-crop.pdf>
+Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 194.
+(pdftex.def)             Requested size: 510.0pt x 292.87764pt.
+ [5 <./figures/SimPlots-crop.pdf>]
+Underfull \hbox (badness 1168) in paragraph at lines 202--204
 []\OT1/cmr/m/n/10 Figure 3 ? Fit-ted sero-preva-lence curves for all
  []
 
-[5 <./figures/veff_fakedata.pdf> <./figures/vsc_simdata_vaxcase.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./figures/vsc_simdata_vaxcas
-e.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] (./paper.bbl
+(./paper.bbl [6 <./figures/VaccFOIveff-crop.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
  []\OT1/cmr/m/n/9 Justin El-lis and Rut-ger van Haasteren.  jel-
  []
 
 Missing character: There is no ø in font cmr9!
-) [6] (./paper.aux)
+) [7 <./figures/SeroPlots-crop.pdf>] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6535 strings out of 492995
- 99807 string characters out of 6132704
+ 6542 strings out of 492995
+ 99798 string characters out of 6132704
  310951 words of memory out of 5000000
- 9997 multiletter control sequences out of 15000+600000
+ 10004 multiletter control sequences out of 15000+600000
  11452 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,12n,26p,1280b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -462,27 +462,23 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (6 pages, 1587081 bytes).
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (7 pages, 7768403 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 232 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
