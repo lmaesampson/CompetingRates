@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUN 2018 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUN 2018 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,14 +283,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 11.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 11.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 11.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 11.
-(./paper.aux
-
-LaTeX Warning: Label `subsec:DRC' multiply defined.
-
-
-LaTeX Warning: Label `subsec:DRC@cref' multiply defined.
-
-)
+(./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -305,7 +298,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen117
@@ -404,58 +398,58 @@ Underfull \hbox (badness 1158) in paragraph at lines 36--39
 LaTeX Warning: Reference `table:autocorr' on page 3 undefined on input line 151
 .
 
-[3]
-
-LaTeX Warning: Reference `fig:veffsimdata' on page 4 undefined on input line 17
-1.
-
-<figures/SimPlots-crop.pdf, id=31, 891.33pt x 917.4275pt>
+[3] <figures/SimPlots-crop.pdf, id=31, 891.33pt x 957.5775pt>
 File: figures/SimPlots-crop.pdf Graphic file (type pdf)
 
 <use figures/SimPlots-crop.pdf>
-Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 174.
-(pdftex.def)             Requested size: 510.0pt x 524.94095pt.
- [4]
-<figures/VaccFOIveff-crop.pdf, id=35, 1035.87pt x 466.74374pt>
-File: figures/VaccFOIveff-crop.pdf Graphic file (type pdf)
+Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 175.
+(pdftex.def)             Requested size: 458.99689pt x 493.10678pt.
 
-<use figures/VaccFOIveff-crop.pdf>
-Package pdftex.def Info: figures/VaccFOIveff-crop.pdf used on input line 188.
-(pdftex.def)             Requested size: 510.0pt x 229.79608pt.
 
-<figures/SeroPlots-crop.pdf, id=36, 811.03pt x 465.74pt>
+LaTeX Warning: Reference `fig:svcsimdata' on page 4 undefined on input line 186
+.
+
+[4] [5 <./figures/SimPlots-crop.pdf>]
+<figures/SeroPlots-crop.pdf, id=122, 811.03pt x 465.74pt>
 File: figures/SeroPlots-crop.pdf Graphic file (type pdf)
 
 <use figures/SeroPlots-crop.pdf>
-Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 194.
-(pdftex.def)             Requested size: 510.0pt x 292.87764pt.
- [5 <./figures/SimPlots-crop.pdf>]
-Underfull \hbox (badness 1168) in paragraph at lines 202--204
-[]\OT1/cmr/m/n/10 Figure 3 ? Fit-ted sero-preva-lence curves for all
- []
+Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 191.
+(pdftex.def)             Requested size: 433.50311pt x 248.94458pt.
 
-(./paper.bbl [6 <./figures/VaccFOIveff-crop.pdf>]
+<figures/VaccFOIveff-crop.pdf, id=123, 1035.87pt x 466.74374pt>
+File: figures/VaccFOIveff-crop.pdf Graphic file (type pdf)
+
+<use figures/VaccFOIveff-crop.pdf>
+Package pdftex.def Info: figures/VaccFOIveff-crop.pdf used on input line 195.
+(pdftex.def)             Requested size: 510.0pt x 229.79608pt.
+
+<figures/RiskRank-crop.pdf, id=124, 938.50626pt x 777.90625pt>
+File: figures/RiskRank-crop.pdf Graphic file (type pdf)
+
+<use figures/RiskRank-crop.pdf>
+Package pdftex.def Info: figures/RiskRank-crop.pdf used on input line 199.
+(pdftex.def)             Requested size: 246.0pt x 203.90076pt.
+ (./paper.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
  []\OT1/cmr/m/n/9 Justin El-lis and Rut-ger van Haasteren.  jel-
  []
 
 Missing character: There is no ø in font cmr9!
-) [7 <./figures/SeroPlots-crop.pdf>] (./paper.aux)
+) [6] [7 <./figures/SeroPlots-crop.pdf> <./figures/VaccFOIveff-crop.pdf>]
+[8 <./figures/RiskRank-crop.pdf>] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 6542 strings out of 492995
- 99798 string characters out of 6132704
+ 6546 strings out of 492995
+ 99918 string characters out of 6132704
  310951 words of memory out of 5000000
- 10004 multiletter control sequences out of 15000+600000
+ 10007 multiletter control sequences out of 15000+600000
  11452 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,26p,1280b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,26p,1528b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -475,10 +469,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (7 pages, 7768403 bytes).
+Output written on paper.pdf (8 pages, 8944442 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 262 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
