@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUN 2018 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  18 JUN 2018 14:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,52 +404,51 @@ File: figures/SimPlots-crop.pdf Graphic file (type pdf)
 <use figures/SimPlots-crop.pdf>
 Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 175.
 (pdftex.def)             Requested size: 458.99689pt x 493.10678pt.
-
-
-LaTeX Warning: Reference `fig:svcsimdata' on page 4 undefined on input line 186
-.
-
-[4] [5 <./figures/SimPlots-crop.pdf>]
+ [4] [5 <./figures/SimPlots-crop.pdf>]
 <figures/SeroPlots-crop.pdf, id=122, 811.03pt x 465.74pt>
 File: figures/SeroPlots-crop.pdf Graphic file (type pdf)
 
 <use figures/SeroPlots-crop.pdf>
-Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 191.
+Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 192.
 (pdftex.def)             Requested size: 433.50311pt x 248.94458pt.
 
-<figures/VaccFOIveff-crop.pdf, id=123, 1035.87pt x 466.74374pt>
-File: figures/VaccFOIveff-crop.pdf Graphic file (type pdf)
+<figures/VacFOIveff-crop.pdf, id=123, 1036.87375pt x 465.74pt>
+File: figures/VacFOIveff-crop.pdf Graphic file (type pdf)
 
-<use figures/VaccFOIveff-crop.pdf>
-Package pdftex.def Info: figures/VaccFOIveff-crop.pdf used on input line 195.
-(pdftex.def)             Requested size: 510.0pt x 229.79608pt.
+<use figures/VacFOIveff-crop.pdf>
+Package pdftex.def Info: figures/VacFOIveff-crop.pdf used on input line 199.
+(pdftex.def)             Requested size: 510.0pt x 229.0816pt.
 
 <figures/RiskRank-crop.pdf, id=124, 938.50626pt x 777.90625pt>
 File: figures/RiskRank-crop.pdf Graphic file (type pdf)
 
 <use figures/RiskRank-crop.pdf>
-Package pdftex.def Info: figures/RiskRank-crop.pdf used on input line 199.
+Package pdftex.def Info: figures/RiskRank-crop.pdf used on input line 210.
 (pdftex.def)             Requested size: 246.0pt x 203.90076pt.
- (./paper.bbl
+ [6] (./paper.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
  []\OT1/cmr/m/n/9 Justin El-lis and Rut-ger van Haasteren.  jel-
  []
 
 Missing character: There is no ø in font cmr9!
-) [6] [7 <./figures/SeroPlots-crop.pdf> <./figures/VaccFOIveff-crop.pdf>]
-[8 <./figures/RiskRank-crop.pdf>] (./paper.aux)
+[7 <./figures/SeroPlots-crop.pdf>]) [8 <./figures/VacFOIveff-crop.pdf>]
+[9 <./figures/RiskRank-crop.pdf>] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
  ) 
 Here is how much of TeX's memory you used:
- 6546 strings out of 492995
- 99918 string characters out of 6132704
+ 6549 strings out of 492995
+ 99945 string characters out of 6132704
  310951 words of memory out of 5000000
- 10007 multiletter control sequences out of 15000+600000
+ 10010 multiletter control sequences out of 15000+600000
  11452 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,26p,1528b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,26p,1589b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -466,13 +465,14 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (8 pages, 8944442 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (9 pages, 11595885 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
