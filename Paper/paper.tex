@@ -23,7 +23,7 @@
 \maketitle
 
 \section{Introduction \label{sec:Intro}}
-Dramatic improvements in the coverage of vaccination with measles containing vaccines have lead to significant reductions in the incidence of measles disease and thea associated childhood mortality [REF - Dabbagh et al]. 
+Dramatic improvements in the coverage of vaccination with measles containing vaccines have lead to significant reductions in the incidence of measles disease and the associated childhood mortality [REF - Dabbagh et al]. 
 However, despite these improvements at the national scale, significant heterogeneity in both vaccination coverage and disease incidence remains at the sub-national level [REF Takahashi].
 Given the high transmission rate of measles, the proportion of the population that must be immunized to achieve and maintain elimination of measles is likely to be greater than 90\% in most populations [REF - Goodson?] (the exact level will be modulated by locally specific conditions just as popualtion density and contact rates).
 %"The WHO recommends that programs use good quality data to monitor population immunity by identifying and responding to large numbers of susceptibles" from Winter et al reference to WHO Measles vaccines: WHO position paper Wkly Epidemiol Rec 2017;92:205-28
@@ -77,7 +77,7 @@ p(\mathrm{immune}|a)  &= 1 - \exp\left( - \int_0^a f(a') + v(a') da'\right) \non
 \label{eq:CatModSum}
 \end{align}
 
-The functional forms of $f(a)$ and $v(a)$ are free to be specified. In this study, we choose to use un-normalized Weibull distributions to parameterize both of these functions, as they have been shown to be sufficiently flexible to match a range of possible forces of infection and vaccination hazards[REF]. Thus $f(a) \rightarrow f(a|\mathbb{\psi})$ and $v(a) \rightarrow v(a|\mathbb{\theta})$, where $\mathbb{\psi}$ and $\mathbb{\theta}$ are vectors of the parameters we use for the Weibull distribution - height ($\eta$), scale ($\alpha$), and shape ($\beta$). This gives six parameters that fully specify the forms of $f(a)$ and $v(a)$ from Eq.~\ref{eq:CatModSum} - $\alpha$, $\beta$, and $\eta$ for two independent Weibull distributions. To allow for the fact that not all vaccinations produce immunity, we introduce a seventh parameter - the vaccine effectiveness ($\gamma$). This enters the equation as a multiplier on $v(a)$ that ranges between $0.0$ and $1.0$.
+The functional forms of $f(a)$ and $v(a)$ are free to be specified. In this study, we choose to use un-normalized Weibull distributions to parameterize both of these functions, as they have been shown to be sufficiently flexible to match a range of possible forces of infection and vaccination hazards~\cite{ferrari_episodic_2010}. Thus $f(a) \rightarrow f(a|\mathbb{\psi})$ and $v(a) \rightarrow v(a|\mathbb{\theta})$, where $\mathbb{\psi}$ and $\mathbb{\theta}$ are vectors of the parameters we use for the Weibull distribution - height ($\eta$), scale ($\alpha$), and shape ($\beta$). This gives six parameters that fully specify the forms of $f(a)$ and $v(a)$ from Eq.~\ref{eq:CatModSum} - $\alpha$, $\beta$, and $\eta$ for two independent Weibull distributions. To allow for the fact that not all vaccinations produce immunity, we introduce a seventh parameter - the vaccine effectiveness ($\gamma$). This enters the equation as a multiplier on $v(a)$ that ranges between $0.0$ and $1.0$.
 
 Besides the flexibility of the distribution, another appealing aspect of the Weibull as our choice of parameterization is that it can be integrated analytically, as
 \begin{equation}
@@ -85,14 +85,19 @@ Besides the flexibility of the distribution, another appealing aspect of the Wei
 \end{equation}
 We re-absorb the factor of $\beta/\alpha$ on the r.h.s. of this equation into the parameter $\eta$, and have a final expression for the probability of immunity at a particular age
 \begin{align}
+\label{eq:seroprob}
 p(\mathrm{immune}|a) = 1 - \exp\big\{&-\eta_f\left(1-\exp(-(a/\alpha_f)^{\beta_f})\right)  \nonumber \\ 
 &-\eta_v \gamma \left(1-\exp(-(a/\alpha_v)^{\beta_v}) \right)  \big\},
 \end{align}
 which is parameterized by seven total parameters - $\{\eta_f, \alpha_f, \beta_f, \gamma, \eta_v, \alpha_v, \beta_v\}$.
 
-FIX Need to add a description of the model including a constant, and a discussion of the fact that we end up using this for the real datasets in many cases.
+This is the model that we use to analyze simulated data (see Sec.~\ref{subsec:simdata}), but we found after initial exploration using the data from the Democratic Republic of Congo that the resulting foi was qualitatively quite flat, and so we decided to extend this model by adding a constant to the force of infection as
+\begin{equation}
+\rm{foi}(a) = \omega * \rm{Weibull} + (1 - \omega)*\kappa,
+\end{equation}
+where $\omega$ ranges between $0$ and $1$, and determines the relative weighting of the Weibull and constant terms, and $\kappa$ is a constant that is allowed to range between $10^{-4}$ and $10^2$. The expression in Eq.~\ref{eq:seroprob} is then trivially updated to reflect the integral of this more complicated force of infection function. We use Bayesian model selection, discussed in Sec.~\ref{subsec:BF}, to determine for which provinces this more complicated model is appropriate.
 
-This expression gives the probability of observing a seropositive individual at age $a$, which accounts for one of our three datasets. The other two are vaccination data and case data. Using the function described above for vaccination hazard, the probability of an individual having been vaccinated by age $a$ is given by
+Eq.~\ref{eq:seroprob} gives the probability of observing a seropositive individual at age $a$, which accounts for one of our three datasets. The other two are vaccination data and case data. Using the function described above for vaccination hazard, the probability of an individual having been vaccinated by age $a$ is given by
 \begin{equation}
 p(\mathrm{vaccinated}|a) = 1 - \exp \left\{ - \eta_v (1-\exp\left(-(a/\alpha_v)^{\beta_v}\right) \right\}.
 \end{equation}
@@ -119,7 +124,7 @@ For the real data from the DRC, we wish to determine which provinces warrant the
 
 Two models, $\mathcal{M}_0$ and $\mathcal{M}_1$, where $\mathcal{M}_0$ is the simpler model, are nested when there exists a parameter $\omega$ for which $\mathcal{M}_0 = \mathcal{M}_1$ when $\omega = \omega_0$. (For us, constant is the same as Weibull plus constant when the parameter $\alpha$ is equal to 1.0). In this case, the Bayes factor between $\mathcal{M}_0$ and $\mathcal{M}_1$ is simply
 \begin{equation}
-BF_{01} = \frac{\rm{posterior}(\omega =\omega_0)}{\rm{prior}(\omega=\omega_0},
+BF_{01} = \frac{\rm{posterior}(\omega =\omega_0)}{\rm{prior}(\omega=\omega_0)},
 \end{equation}
 where posterior() and prior() refer to the posterior and prior densities at $\omega = \omega_0$. To evaluate this quantity, it is only necessary to generate the posterior distribution of $\omega$, and then compare the posterior and prior densities.
 
@@ -144,11 +149,7 @@ Parameter & Prior \\
 \end{center}
 \end{table}
 
-We run for $70000$ iterations, keeping every $20$th point in order to decrease autocorrelation. At the end of each run, we calculate the number of effective samples via thinning by the autocorrelation length, as
-\begin{equation}
-N_{eff} = \frac{N}{auto}.
-\end{equation}
-Both the effective number of samples and the autocorrelation lengths of all chains are shown in Table~\ref{table:autocorr}.
+We run for $150000$ iterations, keeping every $100$th point after a burnin period of $5000$ steps in order to decrease autocorrelation. The two-dimensional posterior distributions for the parameter pairs are shown in Appendix~\ref{app1}.
 
 \subsection{Simulated Data\label{subsec:SimData}}
 To confirm that we can accurately recover the force of infection and vaccination hazard using the model we have chosen, we generate simulated datasets consisting of age-specified measles case, vaccination, and serology data using a previously developed, age-structured MSIRV (Maternally immune, Susceptible, Infected, Recovered, Vaccinated) model~\cite{Metcalf2012}. We used demographic parameters from UN estimates for the DRC and increased vaccination linearly from 0 to 50\% over the first 30 years of a 50 year simulation. $R_{0}$ (the number of secondary cases resulting from the introduction of a single infected individual) was assumed to be constant at 15 over the entirety of the simulation. The force of infection (foi) was not directly chosen to be a Wiebull function, but is generated using the specified $R_0$ and WAIFW (Who Acquires Infection from Whom) matrix that describes social interactions as estimated via the POLYMOD study~\cite{Mossong2008}. This means that we cannot directly compare the recovered Weibull parameters to injected parameters, but we \emph{can} compare the recovered foi curve to the true values, as well as the recovered vaccination efficacy ($\gamma$) to the true value. 
@@ -158,8 +159,13 @@ While the raw MSIRV model output always entails a value for $\gamma$ of 1, we ca
 After we generated a full time-series of case, vaccination, and serology data, we then downsampled the simulation results by randomly drawing the same number of observations as are present in the empirical data from the DRC.
 
 \subsection{Data \label{subsec:Data}}
-Description of the data. 
+The real-world data that we apply our model to is from the Democratic Republic of the Congo (DRC), aggregated by province. We note that DRC changed from an 11 province system to a 26 province system in 2015; here we use the 11 province designations. For each province, we have three data sets: vaccination coverage, seroprevalence, and case data, all broken down by age. 
 
+The vaccination coverage data is from age-specific survey responses from the 2013-2014 Demographic and Health Survey (DHS) made publicly available by ICF International (The DHS Program - Data Available at http://dhsprogram.com/Data/). The survey contains one record for each interviewed woman's child below 5 years of age at the time of the survey.   For each child we extracted the age, in months, at the time of the survey and whether or not the child had ever been vaccinated for measles, based on either the record on a vaccination card or parent/guardian recall. We note that parental recall of vaccination may suffer from biases, particularly for older children. Further, the DHS survey question did not distinguish between different sources of measles vaccination (e.g. through routine program, supplemental vaccination campaigns, or outbreak response vaccination campaigns).  However, as vaccination cards were rarely available in this survey, parental recall allows the inclusion of many more survey responses; in the 2013-14 DHS in DRC only 1436 respondents had a clearly marked vaccination card, out of 10366 children. Parental recall has previously been show to provide a relatively robust indicator of vaccination status\cite{ndirangu_validating_2011}. Administered measles vaccines have shown to be highly effective in generating protective immunity\cite{guris_measles_1996,king_clinical_1991}, and we characterize our vaccine effectiveness parameter $\gamma$ as the probability that a child reported as vaccinated based on either a written record or parental recall was in fact vaccinated and developed protective immunity as a result. Vaccination bias may be lower than one due to recall bias in parental reporting of children's vaccination status, failure of measles vaccination in generating protective immunity, or immunity due to natural infection having already been attained prior to infection.
+
+The seroprevalence data is from dried blood spot samples that were taken from children in a subset of households during the 2013-14 DHS survey and tested for the presence of measles IgG antibodies.  Samples were collected from 8267 children between the ages of 0 and 59 months of age. Due to inconclusive results or errors in testing 307 samples were discarded, leaving 7960 samples classified as measles IgG positive or negative. As with the vaccination responses, each sample was geolocated to the cluster-level and we aggregated all samples within each of the 11 provinces.
+
+The age distribution of measles cases was taken from individual case-reporting for DRC reported to the World Health Organization (WHO) between 2011-2017. During this time period, 33098 suspected measles cases were reported, of which 5495 were classified as lab-confirmed by the presence of IgM measles antibodies and 13858 were classified  as epidemiologically linked because they occurred close in time and space to a lab confirmed case.  For each suspected case we extracted the age, in months, and the province in which the case was recorded. Because the age of many cases was binned to the year (e.g. recorded as 24 or 36 months) we rounded all cases up to the nearest year; thus cases were binned into 1 year age classes following the convention (0,1],(1,2], etc. 
 \subsection{Comparing Data and Inference \label{subsec:Comp}}
 A standard approach for interpreting the results of Bayesian inference would be inspecting the posterior distributions for the model parameters. But the parameters of our model are not, in themselves, particularly interesting - it is the inferred seroprevalence, case distribution, and vaccination probability that we wish to compare with the data. To do this, we generate the posteriors on $\{\eta_f, \alpha_f, \beta_f, \gamma, \eta_v, \alpha_v, \beta_v\}$ as described, and then draw from these posteriors to generate the seroprevalence, case, and vaccination curves as laid out in Sec.~\ref{subsec:CompetingRates}. Because the vaccine efficacy, $\gamma$, is of interest on its own, we also examine the posterior distributions for this parameter in detail.
 
@@ -238,6 +244,11 @@ Several things that we haven?t dealt with here, that we?ll need to at least ackn
 	- these are all things that can be dealt with at least theoretically
 
 Take-home message about merging serosurveillance and case-based surveillance
+
+\appendix*
+    \section{Full Results from MCMC Runs}
+Here, we show the two-dimensional posterior distributions for pairs of parameters from the MCMC runs on the DRC data. 
+
 
 \bibliographystyle{unsrt}
 \bibliography{master}
