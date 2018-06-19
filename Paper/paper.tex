@@ -247,7 +247,14 @@ Take-home message about merging serosurveillance and case-based surveillance
 
 \appendix*
     \section{Full Results from MCMC Runs}
-Here, we show the two-dimensional posterior distributions for pairs of parameters from the MCMC runs on the DRC data. 
+Here, in Figure~\ref{fig:cornerplot}, we show the two-dimensional posterior distributions for all pairs of parameters from the MCMC runs on the DRC data. The correlation patterns between the different parameters are typically quite simple, except for that between $v_\alpha$ and $v_\beta$ and that between $f_\eta$ and $\omega$, both of which exhibit curvature. There is no indication that the sampler was unable to explore the full parameter space.
+
+It is also worth noting in this Figure that Equateur (in yellow) in general has parameter values that are outliers from the other provinces. This is possibly an indicator of why Equateur was the only province that was best described by the more complicated model when fitting all three datasets, but by the simpler model when using only case and vaccination data.
+
+\begin{figure*}
+\includegraphics[width=\textwidth,angle=0]{figures/cornerplot.png}
+\caption{\label{fig:cornerplot}  Two-dimensional posterior distributions for all pairs of parameters for the seven provinces that were best described by the more complicated force of infection model. The correlation structure between the different parameters is simple with a few exceptions.}
+\end{figure*}
 
 
 \bibliographystyle{unsrt}
