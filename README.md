@@ -13,4 +13,7 @@ A competing rates model for seroprevalence in the Democratic Republic of Congo t
 * foi_injected is the force of infection from the simulation
 * pvaccCov* is the probability of vaccination for two different vaccine efficacies.
 
+### Paper
+* All of the files associated with the submitted paper - .tex, .bib, and figures files.
+
 
