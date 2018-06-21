@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  19 JUN 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  21 JUN 2018 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -373,112 +373,122 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 23.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1038) in paragraph at lines 36--39
-\OT1/cmr/m/n/10 can-not, by it-self, quan-tify the rel-a-tive con-tri-bu-tion
- []
+
+LaTeX Warning: Reference `Winter2018Sero' on page 1 undefined on input line 35.
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 36--39
-\OT1/cmr/m/n/10 mod-el-ing [REF- Win-ter JID]. In the ab-sence of a
- []
+
+LaTeX Warning: Reference `Polymod' on page 1 undefined on input line 37.
 
 
-Overfull \hbox (11.50064pt too wide) in paragraph at lines 36--39
-\OT1/cmr/m/n/10 http://www.thelancet.com/pdfs/journals/laninf/PIIS1473-
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 36--39
-\OT1/cmr/m/n/10 of this WAIFW ma-trix is chal-leng-ing from dis-ease
+Underfull \hbox (badness 1354) in paragraph at lines 39--43
+\OT1/cmr/m/n/10 specific force of in-fec-tion from cross-sectional, age-
  []
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `ferrari_episodic_2010' on page 2 undefined on
- input line 80.
-
-
-LaTeX Warning: Reference `subsec:simdata' on page 2 undefined on input line 94.
+LaTeX Warning: Reference `subsec:simdata' on page 2 undefined on input line 91.
 
 
 [2]
 
-LaTeX Warning: Reference `app1' on page 3 undefined on input line 152.
+Package natbib Warning: Citation `TheRev' on page 3 undefined on input line 120
+.
 
-[3]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 156.
+LaTeX Warning: Reference `app1' on page 3 undefined on input line 149.
 
-[4] <figures/SimPlots-crop.pdf, id=34, 891.33pt x 957.5775pt>
+[3] [4]
+
+LaTeX Warning: Reference `subsecSimData' on page 5 undefined on input line 182.
+
+
+<figures/SimPlots-crop.pdf, id=34, 912.40875pt x 781.92125pt>
 File: figures/SimPlots-crop.pdf Graphic file (type pdf)
 
 <use figures/SimPlots-crop.pdf>
-Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 181.
-(pdftex.def)             Requested size: 458.99689pt x 493.10678pt.
-
-<figures/SeroPlots-crop.pdf, id=35, 811.03pt x 465.74pt>
+Package pdftex.def Info: figures/SimPlots-crop.pdf used on input line 191.
+(pdftex.def)             Requested size: 458.99689pt x 393.34589pt.
+ [5]
+<figures/SeroPlots-crop.pdf, id=38, 811.03pt x 487.8225pt>
 File: figures/SeroPlots-crop.pdf Graphic file (type pdf)
 
 <use figures/SeroPlots-crop.pdf>
-Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 198.
-(pdftex.def)             Requested size: 433.50311pt x 248.94458pt.
- [5] [6 <./figures/SimPlots-crop.pdf>]
+Package pdftex.def Info: figures/SeroPlots-crop.pdf used on input line 210.
+(pdftex.def)             Requested size: 433.50311pt x 260.74799pt.
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 203.
-
-<figures/VacFOIveff-crop.pdf, id=126, 1036.87375pt x 465.74pt>
+<figures/VacFOIveff-crop.pdf, id=39, 1036.87375pt x 490.83376pt>
 File: figures/VacFOIveff-crop.pdf Graphic file (type pdf)
 
 <use figures/VacFOIveff-crop.pdf>
-Package pdftex.def Info: figures/VacFOIveff-crop.pdf used on input line 205.
-(pdftex.def)             Requested size: 510.0pt x 229.0816pt.
-
-<figures/RiskRank-crop.pdf, id=127, 938.50626pt x 777.90625pt>
+Package pdftex.def Info: figures/VacFOIveff-crop.pdf used on input line 217.
+(pdftex.def)             Requested size: 510.0pt x 241.42436pt.
+ [6 <./figures/SimPlots-crop.pdf>]
+<figures/RiskRank-crop.pdf, id=142, 938.50626pt x 777.90625pt>
 File: figures/RiskRank-crop.pdf Graphic file (type pdf)
 
 <use figures/RiskRank-crop.pdf>
-Package pdftex.def Info: figures/RiskRank-crop.pdf used on input line 216.
+Package pdftex.def Info: figures/RiskRank-crop.pdf used on input line 232.
 (pdftex.def)             Requested size: 246.0pt x 203.90076pt.
  [7 <./figures/SeroPlots-crop.pdf>] [8 <./figures/VacFOIveff-crop.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 245.
+ on input line 251.
 
-<figures/cornerplot.png, id=177, 1436.36626pt x 1426.97115pt>
+[9 <./figures/RiskRank-crop.pdf>]
+<figures/cornerplot.png, id=229, 1436.36626pt x 1426.97115pt>
 File: figures/cornerplot.png Graphic file (type png)
 
 <use figures/cornerplot.png>
-Package pdftex.def Info: figures/cornerplot.png used on input line 255.
+Package pdftex.def Info: figures/cornerplot.png used on input line 287.
 (pdftex.def)             Requested size: 510.0pt x 506.65451pt.
  (./paper.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ì in font cmr9!
+
+Underfull \hbox (badness 2452) in paragraph at lines 73--79
+ \OT1/cmr/m/n/9 Hoff, Patrick Mukadi, Cal-ixte Shidi, Sue Ger-ber,
+ []
+
+Missing character: There is no √ in font cmr9!
+Missing character: There is no ∏ in font cmr9!
+
+Underfull \hbox (badness 8019) in paragraph at lines 87--89
  []\OT1/cmr/m/n/9 Justin El-lis and Rut-ger van Haasteren.  jel-
  []
 
 Missing character: There is no ¯ in font cmr9!
+[10]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no § in font cmr9!
 Missing character: There is no √ in font cmr9!
 Missing character: There is no º in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ê in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no Ä in font cmr9!
+Missing character: There is no ê in font cmr9!
+ [11 <./figures/cornerplot.png>]
+Missing character: There is no ÿ in font cmr9!
 )
 
 Package natbib Warning: There were undefined citations.
 
-[9 <./figures/RiskRank-crop.pdf>] [10 <./figures/cornerplot.png>] (./paper.aux)
+[12] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6572 strings out of 492995
- 100481 string characters out of 6132704
- 290951 words of memory out of 5000000
- 10031 multiletter control sequences out of 15000+600000
+ 6639 strings out of 492995
+ 102111 string characters out of 6132704
+ 313951 words of memory out of 5000000
+ 10098 multiletter control sequences out of 15000+600000
  11452 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,26p,1955b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,26p,2053b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -499,10 +509,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (10 pages, 14789702 bytes).
+Output written on paper.pdf (12 pages, 7702998 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
+ 305 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
