@@ -28,6 +28,24 @@ C.~J.~E. Metcalf, A.~Tatem, O.~N. Bjornstad, J.~Lessler, K.~O\&\#39, REILLY,
   measles vaccine coverage and prospects for elimination across {Africa}.
 \newblock {\em Epidemiology \&amp; Infection}, 143(7):1457--1466, May 2015.
 
+\bibitem{Goodson2011}
+J.~L. Goodson, B.~G. Masresha, K.~Wannemuehler, A.~Uzicanin, and S.~Cochi.
+\newblock {{C}hanging epidemiology of measles in {A}frica}.
+\newblock {\em J. Infect. Dis.}, 204 Suppl 1:S205--214, Jul 2011.
+
+\bibitem{WHO2017}
+No~authors listed.
+\newblock {{M}easles vaccines: {W}{H}{O} position paper â¤? {A}pril 2017}.
+\newblock {\em Wkly. Epidemiol. Rec.}, 92(17):205--227, 04 2017.
+
+\bibitem{Winter2018Sero}
+Amy~K Winter, Micaela~E Martinez, Felicity~T Cutts, William~J Moss, Matt~J
+  Ferrari, Amalie McKee, Justin Lessler, Kyla Hayford, Jacco Wallinga, and
+  C~Jess~E Metcalf.
+\newblock Benefits and challenges in using seroprevalence data to inform models
+  for measles and rubella elimination.
+\newblock {\em The Journal of Infectious Diseases}, page jiy137, 2018.
+
 \bibitem{METCALF2017S14}
 C~Jessica~E Metcalf, Keitly Mensah, Amy~P Wesolowski, Amy~K Winter,
   B~Ramamonjiharisoa, Saki Takahashi, A~Randriamanantena, Richter
@@ -43,13 +61,20 @@ Filippo Trentini, Piero Poletti, Stefano Merler, and Alessia Melegaro.
   multi-country modelling analysis.
 \newblock {\em The Lancet Infectious Diseases}, 17(10):1089 -- 1097, 2017.
 
-\bibitem{Winter2018Sero}
-Amy~K Winter, Micaela~E Martinez, Felicity~T Cutts, William~J Moss, Matt~J
-  Ferrari, Amalie McKee, Justin Lessler, Kyla Hayford, Jacco Wallinga, and
-  C~Jess~E Metcalf.
-\newblock Benefits and challenges in using seroprevalence data to inform models
-  for measles and rubella elimination.
-\newblock {\em The Journal of Infectious Diseases}, page jiy137, 2018.
+\bibitem{Metcalf2012}
+C.~J.~E. Metcalf, J.~Lessler, P.~Klepac, A.~Morice, B.~T. Grenfell, and O.~N.
+  Bjørnstad.
+\newblock Structured models of infectious disease: {Inference} with discrete
+  data.
+\newblock {\em Theoretical Population Biology}, 82(4):275--282, December 2012.
+
+\bibitem{Polymod}
+J.~Mossong, N.~Hens, M.~Jit, P.~Beutels, K.~Auranen, R.~Mikolajczyk,
+  M.~Massari, S.~Salmaso, G.~S. Tomba, J.~Wallinga, J.~Heijne,
+  M.~Sadkowska-Todys, M.~Rosinska, and W.~J. Edmunds.
+\newblock {{S}ocial contacts and mixing patterns relevant to the spread of
+  infectious diseases}.
+\newblock {\em PLoS Med.}, 5(3):e74, Mar 2008.
 
 \bibitem{griffiths_catalytic_1974}
 D.~A. Griffiths.
@@ -83,6 +108,13 @@ M.~J. Ferrari, A.~Djibo, R.~F. Grais, B.~T. Grenfell, and O.~N. BjÃ¸rnstad.
   a corrected method using measles as an example.
 \newblock {\em Epidemiology \&amp; Infection}, 138(1):108--116, January 2010.
 
+\bibitem{TheRev}
+Thomas Bayes.
+\newblock Lii. an essay towards solving a problem in the doctrine of chances.
+  by the late rev. mr. bayes, f. r. s. communicated by mr. price, in a letter
+  to john canton, a. m. f. r. s.
+\newblock {\em Philosophical Transactions}, 53:370--418, 1763.
+
 \bibitem{PTMCMC}
 Justin Ellis and Rutger van Haasteren.
 \newblock jellis18/ptmcmcsampler: Official release, October 2017.
@@ -93,21 +125,6 @@ Z.~Arzoumanian et~al.
   in Circular Orbits: Limits From the North American Nanohertz Observatory for
   Gravitational Waves}.
 \newblock {\em Astrophys. J.}, 794(2):141, 2014.
-
-\bibitem{Metcalf2012}
-C.~J.~E. Metcalf, J.~Lessler, P.~Klepac, A.~Morice, B.~T. Grenfell, and O.~N.
-  Bjørnstad.
-\newblock Structured models of infectious disease: {Inference} with discrete
-  data.
-\newblock {\em Theoretical Population Biology}, 82(4):275--282, December 2012.
-
-\bibitem{Polymod}
-J.~Mossong, N.~Hens, M.~Jit, P.~Beutels, K.~Auranen, R.~Mikolajczyk,
-  M.~Massari, S.~Salmaso, G.~S. Tomba, J.~Wallinga, J.~Heijne,
-  M.~Sadkowska-Todys, M.~Rosinska, and W.~J. Edmunds.
-\newblock {{S}ocial contacts and mixing patterns relevant to the spread of
-  infectious diseases}.
-\newblock {\em PLoS Med.}, 5(3):e74, Mar 2008.
 
 \bibitem{ndirangu_validating_2011}
 James Ndirangu, Ruth Bland, Till BÃ¤rnighausen, and Marie-Louise Newell.

@@ -1,7 +1,12 @@
 \relax 
 \citation{perry_global_2014}
 \citation{prada_demographics_2017,takahashi_geography_2017,metcalf_transport_2015}
+\citation{Goodson2011}
+\citation{WHO2017}
+\citation{Winter2018Sero}
 \citation{METCALF2017S14,TRENTINI20171089,Winter2018Sero}
+\citation{Metcalf2012}
+\citation{Polymod}
 \citation{griffiths_catalytic_1974}
 \citation{Grenfell1985}
 \citation{griffiths_catalytic_1974}
@@ -10,7 +15,7 @@
 \citation{Doshi2017}
 \newlabel{FirstPage}{{}{1}{}{}{}}
 \newlabel{FirstPage@cref}{{}{1}}
-\@writefile{toc}{\contentsline {title}{Catchy Title Goes Here}{1}{}}
+\@writefile{toc}{\contentsline {title}{A novel catalyitic model for estimating age-specific measles sero-prevalence uisng case-incidence data: a case study from the Democratic Republic of the Congo}{1}{}}
 \newlabel{sec:Intro}{{I}{1}{}{}{}}
 \newlabel{sec:Intro@cref}{{[section][1][]I}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction }{1}{}}
@@ -33,9 +38,6 @@
 \newlabel{subsec:BF}{{II\tmspace  +\thinmuskip {.1667em}B}{3}{}{}{}}
 \newlabel{subsec:BF@cref}{{[subsection][2][2]II\tmspace  +\thinmuskip {.1667em}B}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {B}Model Comparison}{3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Prior distributions for the seven model parameters. $\Gamma (a,b)$ is the gamma distribution with shape $a$ and scale $b$, and $\beta (c,d)$ is the $\beta $ distribution with shape parameters $c$ and $d$. }}{3}{}}
-\newlabel{table:priors}{{I}{3}{}{}{}}
-\newlabel{table:priors@cref}{{[table][1][]I}{3}}
 \newlabel{subsec:MCMC}{{II\tmspace  +\thinmuskip {.1667em}C}{3}{}{}{}}
 \newlabel{subsec:MCMC@cref}{{[subsection][3][2]II\tmspace  +\thinmuskip {.1667em}C}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {C}MCMC Sampler }{3}{}}
@@ -44,12 +46,15 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {D}Simulated Data}{3}{}}
 \citation{ndirangu_validating_2011}
 \citation{guris_measles_1996,king_clinical_1991}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Prior distributions for the seven model parameters. $\Gamma (a,b)$ is the gamma distribution with shape $a$ and scale $b$, and $\beta (c,d)$ is the $\beta $ distribution with shape parameters $c$ and $d$. }}{4}{}}
+\newlabel{table:priors}{{I}{4}{}{}{}}
+\newlabel{table:priors@cref}{{[table][1][]I}{4}}
 \newlabel{subsec:Data}{{II\tmspace  +\thinmuskip {.1667em}E}{4}{}{}{}}
 \newlabel{subsec:Data@cref}{{[subsection][5][2]II\tmspace  +\thinmuskip {.1667em}E}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {E}Data }{4}{}}
-\newlabel{subsec:Comp}{{II\tmspace  +\thinmuskip {.1667em}F}{4}{}{}{}}
-\newlabel{subsec:Comp@cref}{{[subsection][6][2]II\tmspace  +\thinmuskip {.1667em}F}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {F}Comparing Data and Inference }{4}{}}
+\newlabel{subsec:Comp}{{II\tmspace  +\thinmuskip {.1667em}F}{5}{}{}{}}
+\newlabel{subsec:Comp@cref}{{[subsection][6][2]II\tmspace  +\thinmuskip {.1667em}F}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {F}Comparing Data and Inference }{5}{}}
 \newlabel{sec:Results}{{III}{5}{}{}{}}
 \newlabel{sec:Results@cref}{{[section][3][]III}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Results }{5}{}}
@@ -65,53 +70,56 @@
 \citation{Uzicanin2011}
 \citation{CuttsHanson,Winter2018Sero}
 \citation{griffiths_catalytic_1974,Grenfell1985,farrington_correlated_2013,Ferrari2010FOI}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Panel (a): color coding of locations used in our analysis. The data was split into the 11 provinces in existence between 1997 and 2015. The map shows these provinces in different colors, as well as the current administrative boundaries as black lines. The colors on this map correspond to the colors used for each province in all figures in this section. Panel (b): seroprevalence data (points) and inferred values up to 25 years. The solid line shows the mean of the posterior distribution for the inferred seroprevalence using all three datasets, while the dashed lines show the full range of the posterior distribution generated using only vaccination and case data. The provinces before the blank space were fit using the Weibull plus constant model for force of infection, while those after (starting with Bas Congo) were fit using only a constant. For the provinces in which seroprevalence data makes a difference in the inferred values, the inferred curve is typically lower than that generated using only vaccination and case data. This is especially pronounced in Sud Kivu.}}{7}{}}
-\newlabel{fig:sero}{{2}{7}{}{}{}}
-\newlabel{fig:sero@cref}{{[figure][2][]2}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Panel (a): Vaccination hazard (solid lines, right y-axis) and vaccination coverage (dashed lines, left y-axis) recovered using all three sets of data from all 11 provinces, generated from a set of posterior samples. For most provinces, the vaccination hazard is tightly peaked near one year, as expected. Panel (b): The recovered force of infection using all data (solid curve) and only vaccination and case data (dashed curves). As in Figure\nobreakspace  {}2{}{}{}\hbox {}, the solid curve is the mean of the posterior distribution, and the provinces before the blank space were fit using the Weibull plus constant model while those after were fit using the constant-only model for force of infection. In most cases, the inclusion of the serology data did not make a large difference in the inferred force of infection. Panel (c): recovered value for vaccine efficacy ($\pm 1\sigma $) from analyses using all three data sets for each province (solid), and vaccine and case data only (dashed). Note that the values without serology data are almost all consistent with the prior on $\gamma $. Because of our results from the simulated data, we do not expect that these values to reflect the true vaccine efficacy (in general, they are probably biased low), but we \emph  {do} expect that the ranking of provinces by vaccine efficacy is correct.}}{8}{}}
-\newlabel{fig:foivaccveff}{{3}{8}{}{}{}}
-\newlabel{fig:foivaccveff@cref}{{[figure][3][]3}{8}}
-\newlabel{sec:Discussion}{{IV}{8}{}{}{}}
-\newlabel{sec:Discussion@cref}{{[section][4][]IV}{8}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Discussion }{8}{}}
+\newlabel{sec:Discussion}{{IV}{7}{}{}{}}
+\newlabel{sec:Discussion@cref}{{[section][4][]IV}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Discussion }{7}{}}
 \citation{griffiths_catalytic_1974,Grenfell1985,whitaker_estimation_2004}
 \citation{perry_global_2014}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Panel (a): color coding of locations used in our analysis. The data was split into the 11 provinces in existence between 1997 and 2015. The map shows these provinces in different colors, as well as the current administrative boundaries as black lines. The colors on this map correspond to the colors used for each province in all figures in this section. Panel (b): seroprevalence data (points) and inferred values up to 25 years. The solid line shows the mean of the posterior distribution for the inferred seroprevalence using all three datasets, while the dashed lines show the full range of the posterior distribution generated using only vaccination and case data. The provinces before the blank space were analyzed using the Weibull plus constant model for force of infection, while those after (starting with Bas Congo) used only a constant. For the provinces in which seroprevalence data makes a difference in the inferred values, the inferred curve is typically lower than that generated using only vaccination and case data. This is especially pronounced in Sud Kivu.}}{8}{}}
+\newlabel{fig:sero}{{2}{8}{}{}{}}
+\newlabel{fig:sero@cref}{{[figure][2][]2}{8}}
 \citation{takahashi_geography_2017,metcalf_transport_2015}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Force of infection integrated to age ten (`risk' )for all eleven provinces, color coded as indicated in Figure\nobreakspace  {}2{}{}{}\hbox {}, calculated using the inferred foi from only serology data (left-most point), case and vaccination data (middle point), and all three datasets. Both the ranking of provinces by risk and the overall values change dramatically between the serology-only and the other two points, but the difference between vaccination plus case and all three data sets is minimal. The maps show the risk in all provinces, with yellow being high risk and dark blue being low risk. }}{9}{}}
-\newlabel{fig:riskrank}{{4}{9}{}{}{}}
-\newlabel{fig:riskrank@cref}{{[figure][4][]4}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces  Panel (a): Vaccination hazard (solid lines, right y-axis) and vaccination coverage (dashed lines, left y-axis) recovered using all three sets of data from all 11 provinces, generated from a set of posterior samples. For most provinces, the vaccination hazard is tightly peaked near one year, as expected. Panel (b): The recovered force of infection using all data (solid curve) and only vaccination and case data (dashed curves). As in Figure\nobreakspace  {}2{}{}{}\hbox {}, the solid curve is the mean of the posterior distribution, and the provinces before the blank space were fit using the Weibull plus constant model while those after were fit using the constant-only model for force of infection. In most cases, the inclusion of the serology data did not make a large difference in the inferred force of infection. Panel (c): recovered value for vaccine efficacy ($\pm 1\sigma $) from analyses using all three data sets for each province (solid), and vaccine and case data only (dashed). Note that the values without serology data are almost all consistent with the prior on $\gamma $. Because of our results from the simulated data, we do not expect that these values to reflect the true vaccine efficacy (in general, they are probably biased low), but we \emph  {do} expect that the ranking of provinces by vaccine efficacy is correct.}}{9}{}}
+\newlabel{fig:foivaccveff}{{3}{9}{}{}{}}
+\newlabel{fig:foivaccveff@cref}{{[figure][3][]3}{9}}
 \bibdata{paperNotes,master}
 \bibcite{perry_global_2014}{{1}{}{{}}{{}}}
 \bibcite{prada_demographics_2017}{{2}{}{{}}{{}}}
 \bibcite{takahashi_geography_2017}{{3}{}{{}}{{}}}
 \bibcite{metcalf_transport_2015}{{4}{}{{}}{{}}}
-\bibcite{METCALF2017S14}{{5}{}{{}}{{}}}
-\bibcite{TRENTINI20171089}{{6}{}{{}}{{}}}
+\bibcite{Goodson2011}{{5}{}{{}}{{}}}
+\bibcite{WHO2017}{{6}{}{{}}{{}}}
 \bibcite{Winter2018Sero}{{7}{}{{}}{{}}}
-\bibcite{griffiths_catalytic_1974}{{8}{}{{}}{{}}}
-\bibcite{Grenfell1985}{{9}{}{{}}{{}}}
-\bibcite{Uzicanin2011}{{10}{}{{}}{{}}}
-\bibcite{Doshi2017}{{11}{}{{}}{{}}}
-\bibcite{ferrari_episodic_2010}{{12}{}{{}}{{}}}
-\bibcite{PTMCMC}{{13}{}{{}}{{}}}
-\bibcite{Arzoumanian2014}{{14}{}{{}}{{}}}
-\bibcite{Metcalf2012}{{15}{}{{}}{{}}}
-\bibcite{Polymod}{{16}{}{{}}{{}}}
+\bibcite{METCALF2017S14}{{8}{}{{}}{{}}}
+\bibcite{TRENTINI20171089}{{9}{}{{}}{{}}}
+\bibcite{Metcalf2012}{{10}{}{{}}{{}}}
+\bibcite{Polymod}{{11}{}{{}}{{}}}
+\bibcite{griffiths_catalytic_1974}{{12}{}{{}}{{}}}
+\bibcite{Grenfell1985}{{13}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Force of infection integrated to age ten (`risk' )for all eleven provinces, color coded as indicated in Figure\nobreakspace  {}2{}{}{}\hbox {}, calculated using the inferred foi from only serology data (left-most point), case and vaccination data (middle point), and all three datasets. Both the ranking of provinces by risk and the overall values change dramatically between the serology-only and the other two points, but the difference between vaccination plus case and all three data sets is minimal. The maps show the risk in all provinces, with yellow being high risk and dark blue being low risk. }}{10}{}}
+\newlabel{fig:riskrank}{{4}{10}{}{}{}}
+\newlabel{fig:riskrank@cref}{{[figure][4][]4}{10}}
 \@writefile{toc}{\appendix }
 \@writefile{toc}{\contentsline {section}{\numberline {A}Full Results from MCMC Runs}{10}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {}References}{10}{}}
-\bibcite{ndirangu_validating_2011}{{17}{}{{}}{{}}}
-\bibcite{guris_measles_1996}{{18}{}{{}}{{}}}
-\bibcite{king_clinical_1991}{{19}{}{{}}{{}}}
-\bibcite{CuttsHanson}{{20}{}{{}}{{}}}
+\bibcite{Uzicanin2011}{{14}{}{{}}{{}}}
+\bibcite{Doshi2017}{{15}{}{{}}{{}}}
+\bibcite{ferrari_episodic_2010}{{16}{}{{}}{{}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Two-dimensional posterior distributions for all pairs of parameters for the seven provinces that were best described by the more complicated force of infection model. The correlation structure between the different parameters is simple with a few exceptions.}}{11}{}}
 \newlabel{fig:cornerplot}{{5}{11}{}{}{}}
 \newlabel{fig:cornerplot@cref}{{[figure][5][2147483647]5}{11}}
-\bibcite{farrington_correlated_2013}{{21}{}{{}}{{}}}
-\bibcite{Ferrari2010FOI}{{22}{}{{}}{{}}}
-\bibcite{whitaker_estimation_2004}{{23}{}{{}}{{}}}
+\bibcite{TheRev}{{17}{}{{}}{{}}}
+\bibcite{PTMCMC}{{18}{}{{}}{{}}}
+\bibcite{Arzoumanian2014}{{19}{}{{}}{{}}}
+\bibcite{ndirangu_validating_2011}{{20}{}{{}}{{}}}
+\bibcite{guris_measles_1996}{{21}{}{{}}{{}}}
+\bibcite{king_clinical_1991}{{22}{}{{}}{{}}}
+\bibcite{CuttsHanson}{{23}{}{{}}{{}}}
+\bibcite{farrington_correlated_2013}{{24}{}{{}}{{}}}
+\bibcite{Ferrari2010FOI}{{25}{}{{}}{{}}}
+\bibcite{whitaker_estimation_2004}{{26}{}{{}}{{}}}
 \bibstyle{unsrt}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\newlabel{LastBibItem}{{23}{12}{}{}{}}
+\newlabel{LastBibItem}{{26}{12}{}{}{}}
 \newlabel{LastBibItem@cref}{{[section][1][]A}{12}}
 \newlabel{LastPage}{{}{12}{}{}{}}
