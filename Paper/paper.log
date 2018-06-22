@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JUN 2018 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 JUN 2018 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -442,13 +442,14 @@ Missing character: There is no â in font cmr9!
 Missing character: There is no ¤ in font cmr9!
 Missing character: There is no ø in font cmr9!
  [10 <./figures/RiskRank-crop.pdf>]
+[11 <./figures/cornerplot.png>]
 Underfull \hbox (badness 2452) in paragraph at lines 98--104
  \OT1/cmr/m/n/9 Hoff, Patrick Mukadi, Cal-ixte Shidi, Sue Ger-ber,
  []
 
 Missing character: There is no Ã in font cmr9!
 Missing character: There is no ¸ in font cmr9!
-[11 <./figures/cornerplot.png>]
+
 Underfull \hbox (badness 8019) in paragraph at lines 119--121
  []\OT1/cmr/m/n/9 Justin El-lis and Rut-ger van Haasteren.  jel-
  []
@@ -470,13 +471,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6649 strings out of 492995
- 102272 string characters out of 6132704
- 294951 words of memory out of 5000000
- 10108 multiletter control sequences out of 15000+600000
+ 6650 strings out of 492995
+ 102283 string characters out of 6132704
+ 293951 words of memory out of 5000000
+ 10109 multiletter control sequences out of 15000+600000
  11452 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,12n,26p,2053b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,12n,26p,2053b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -497,7 +498,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (12 pages, 7709129 bytes).
+Output written on paper.pdf (12 pages, 7709570 bytes).
 PDF statistics:
  305 PDF objects out of 1000 (max. 8388607)
  218 compressed objects within 3 object streams
